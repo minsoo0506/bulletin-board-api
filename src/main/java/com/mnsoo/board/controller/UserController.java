@@ -20,7 +20,7 @@ public class UserController {
 
     private final UserService userService;
 
-    @PostMapping("/signup")
+    @PostMapping("/auth/signup")
     public ResponseEntity<SuccessResponse<String>> signup(@RequestBody @Valid AuthDto.SignUp signupRequest) {
 
         userService.addUser(signupRequest);
@@ -28,6 +28,19 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.OK).body(
                 SuccessResponse.of(
                         ResponseMessage.SIGNUP_SUCCESS,
+                        "success"
+                )
+        );
+    }
+
+    @PostMapping("/auth/signin")
+    public ResponseEntity<SuccessResponse<String>> signIn(@RequestBody AuthDto.SignIn signInRequest){
+
+        userService.signIn(signInRequest);
+
+        return ResponseEntity.status(HttpStatus.OK).body(
+                SuccessResponse.of(
+                        ResponseMessage.LOGIN_SUCCESS,
                         "success"
                 )
         );

@@ -13,6 +13,7 @@ import com.mnsoo.board.type.UserRole;
 import jakarta.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -75,5 +76,37 @@ public class UserService {
             response.setHeader(TokenType.ACCESS.getValue(), access);
             log.info("JWT added to response for user '{}'", user.getLoginId());
         }
+    }
+
+    public void signIn(AuthDto.SignIn signInRequest){
+
+        log.info("Signing in user '{}'", signInRequest.getLoginId());
+
+        User user = userRepository.findByLoginId(signInRequest.getLoginId())
+                .orElseThrow(() -> {
+                   log.warn("User with login id '{}' not found", signInRequest.getLoginId());
+                   return new RestApiException(ErrorCode.NOT_EXIST_USER);
+                });
+
+        if(!passwordEncoder.matches(signInRequest.getPassword(), user.getPassword())){
+            log.warn("Password does not match for user '{}'", signInRequest.getLoginId());
+            throw new RestApiException(ErrorCode.PASSWORD_NOT_MATCH);
+        }
+
+        List<String> roles = user.getRoles().stream()
+                .map(Enum::name)
+                .collect(Collectors.toList());
+
+        String access = jwtService.createJwt(TokenType.ACCESS.getValue(), user.getEmail(), roles, TokenType.ACCESS.getExpiryTime());
+        String refresh = jwtService.createJwt(TokenType.REFRESH.getValue(), user.getEmail(), roles, TokenType.REFRESH.getExpiryTime());
+
+        HttpServletResponse response = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getResponse();
+        if(response != null) {
+            response.addCookie(createCookie(TokenType.REFRESH.getValue(), refresh));
+            response.setHeader(TokenType.ACCESS.getValue(), access);
+            log.info("JWT added to response to user '{}'", user.getLoginId());
+        }
+
+        log.info("User '{}' signed in successfully", user.getLoginId());
     }
 }
