@@ -45,14 +45,12 @@ public class User extends BaseEntity{
     private String password;
 
     @Column(nullable = false)
-    @Email(message = "유효한 이메일 주소 형식이어야 합니다.")
     private String email;
 
     @Column(nullable = false)
     private String name;
 
     @Column(nullable = false)
-    @Pattern(regexp = "^010-\\d{4}-\\d{4}$", message = "전화번호는 010-xxxx-xxxx 형식이어야 합니다.")
     private String phone;
 
     @ElementCollection(targetClass = UserRole.class)

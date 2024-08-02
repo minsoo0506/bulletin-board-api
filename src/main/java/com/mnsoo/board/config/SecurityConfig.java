@@ -62,8 +62,8 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests((auth) -> auth
                         .requestMatchers("/swagger-ui/*", "/v3/api-docs/**").permitAll()
-                        .requestMatchers("/", "/api/users/auth/signup").permitAll()
-                        .requestMatchers("/api/users/auth/signin").hasRole("USER")
+                        .requestMatchers("/", "/api/users/signup").permitAll()
+                        .requestMatchers("/api/users/signin").hasRole("USER")
                 );
         //세션 설정 : STATELESS (JWT 기반 인증을 사용하는 경우, 서버는 클라이언트의 상태를 유지할 필요가 없음)
         http
