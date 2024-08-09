@@ -1,5 +1,7 @@
 package com.mnsoo.board.service;
 
+import static com.mnsoo.board.type.ErrorCode.NOT_AUTHENTICATED_USER;
+import static com.mnsoo.board.type.ErrorCode.UNEXPECTED_PRINCIPAL_TYPE;
 import static com.mnsoo.board.util.CookieUtil.createCookie;
 
 import com.mnsoo.board.domain.User;
@@ -7,6 +9,7 @@ import com.mnsoo.board.dto.AuthDto;
 import com.mnsoo.board.dto.UserDto;
 import com.mnsoo.board.exception.RestApiException;
 import com.mnsoo.board.repository.UserRepository;
+import com.mnsoo.board.security.CustomUserDetails;
 import com.mnsoo.board.type.ErrorCode;
 import com.mnsoo.board.type.TokenType;
 import com.mnsoo.board.type.UserRole;
@@ -15,6 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -32,6 +37,22 @@ public class UserService {
         this.jwtService = jwtService;
         this.passwordEncoder = passwordEncoder;
         this.userRepository = userRepository;
+    }
+
+    public String getCurrentUserEmail () {
+
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        if (authentication == null || !authentication.isAuthenticated()) {
+            throw new RestApiException(NOT_AUTHENTICATED_USER);
+        }
+
+        Object principal = authentication.getPrincipal();
+        if (principal instanceof CustomUserDetails) {
+            return ((CustomUserDetails) principal).getUsername();
+        } else {
+            throw new RestApiException(UNEXPECTED_PRINCIPAL_TYPE);
+        }
     }
 
     // 신규 사용자 정보 등록
