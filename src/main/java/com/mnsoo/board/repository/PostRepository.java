@@ -17,10 +17,11 @@ public interface PostRepository extends JpaRepository <Post, Long> {
 
     Optional<Post> findByPostId(Long postId);
 
-    // 생성일 기준 내림차순으로 모든 게시글 조회(페이징 사용)
+    // 생성일 기준 내림차순으로 삭제되지 않은 모든 게시글 조회
+    @Query("SELECT p FROM Post p WHERE p.deletedAt IS NULL ORDER BY p.createdAt DESC")
     Page<Post> findAllByOrderByCreatedAtDesc(Pageable pageable);
 
-    // 제목 부분 검색 및 생성일 기준 내림차순으로 정렬(페이징 사용)
-    @Query("SELECT p FROM Post p WHERE p.title LIKE %:title% ORDER BY p.createdAt DESC")
+    // 제목 부분 검색 및 생성일 기준 내림차순으로 소프트 삭제되지 않은 게시글 조회
+    @Query("SELECT p FROM Post p WHERE p.title LIKE %:title% AND p.deletedAt IS NULL ORDER BY p.createdAt DESC")
     Page<Post> findByTitleContainingOrderByCreatedAtDesc(String title, Pageable pageable);
 }
