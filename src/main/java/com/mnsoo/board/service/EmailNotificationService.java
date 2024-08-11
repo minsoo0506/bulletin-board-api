@@ -18,6 +18,12 @@ public class EmailNotificationService {
         this.javaMailSender = javaMailSender;
     }
 
+    /**
+     * 게시글에 대한 수정 불가 사전 알림을 전송
+     *
+     * @param user : 게시글을 작성한 유저의 id
+     * @param postTitle : 게시글의 제목
+     */
     public void sendWarning(User user, String postTitle) {
 
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();

@@ -23,7 +23,15 @@ public enum ErrorCode {
     REFRESH_TOKEN_EXPIRED(HttpStatus.BAD_REQUEST, "만료된 Refresh 토큰입니다."),
     INVALID_REFRESH_TOKEN(HttpStatus.BAD_REQUEST, "유효하지 않은 Refresh 토큰입니다."),
 
-    REQUIRED_FIELD_NULL(HttpStatus.BAD_REQUEST, "게시물 등록을 위한 필수 정보가 누락되어 있습니다.")
+    REQUIRED_FIELD_NULL(HttpStatus.BAD_REQUEST, "게시물 등록을 위한 필수 정보가 누락되어 있습니다."),
+    NOTHING_TO_UPDATE(HttpStatus.BAD_REQUEST, "해당 게시글에 대해 수정할 사항이 없습니다."),
+    POST_NOT_FOUND(HttpStatus.BAD_REQUEST, "해당 게시글을 찾을 수 없습니다."),
+    AUTHOR_AND_USER_NOT_MATCH(HttpStatus.BAD_REQUEST, "게시물은 작성자만 수정할 수 있습니다."),
+
+    INVALID_IMAGE_FILE_EXTENSION(HttpStatus.BAD_REQUEST, "유효한 이미지 파일이 아닙니다."),
+    INVALID_REVIEW_IMAGE_ACTION(HttpStatus.BAD_REQUEST, "유효하지 않은 이미지 업로드 액션입니다."),
+    FAILED_TO_UPLOAD_IMAGE(HttpStatus.INTERNAL_SERVER_ERROR, "이미지 업로드에 실패했습니다."),
+    FAILED_TO_DELETE_IMAGE(HttpStatus.INTERNAL_SERVER_ERROR, "이미지 삭제에 실패했습니다.")
     ;
 
     private final HttpStatus httpStatus;

@@ -13,7 +13,7 @@ public class MailConfig {
     @Value("${spring.mail.host}")
     private String host;
 
-    @Value("${spring.mail.username.}")
+    @Value("${spring.mail.username}")
     private String username;
 
     @Value("${spring.mail.password}")

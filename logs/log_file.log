@@ -1,98 +1,453 @@
-[32m2024-08-09 16:18:10.978[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
-[0;39m[32m2024-08-09 16:18:11.016[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 45094 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
-[0;39m[32m2024-08-09 16:18:11.018[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
-[0;39m[32m2024-08-09 16:18:11.525[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
-[0;39m[32m2024-08-09 16:18:11.559[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
-[0;39m[32m2024-08-09 16:18:11.918[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
-[0;39m[32m2024-08-09 16:18:11.924[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
-[0;39m[32m2024-08-09 16:18:11.925[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
-[0;39m[32m2024-08-09 16:18:11.926[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
-[0;39m[32m2024-08-09 16:18:11.958[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
-[0;39m[32m2024-08-09 16:18:11.958[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 903 ms
-[0;39m[32m2024-08-09 16:18:12.057[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
-[0;39m[32m2024-08-09 16:18:12.092[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
-[0;39m[32m2024-08-09 16:18:12.113[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
-[0;39m[32m2024-08-09 16:18:12.308[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
-[0;39m[32m2024-08-09 16:18:12.325[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
-[0;39m[32m2024-08-09 16:18:12.549[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f80cf5
-[0;39m[32m2024-08-09 16:18:12.551[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
-[0;39m[32m2024-08-09 16:18:13.186[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[0;39m[32m2024-08-09 16:18:13.292[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
-[0;39m[32m2024-08-09 16:18:13.566[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
+[32m2024-08-11 16:13:03.371[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-11 16:13:03.394[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 51971 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-11 16:13:03.394[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-11 16:13:03.894[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-11 16:13:03.927[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+[0;39m[32m2024-08-11 16:13:04.314[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-11 16:13:04.325[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:13:04.326[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-11 16:13:04.326[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-11 16:13:04.361[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-11 16:13:04.361[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 943 ms
+[0;39m[32m2024-08-11 16:13:04.517[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-11 16:13:04.566[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-11 16:13:04.592[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-11 16:13:04.802[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-11 16:13:04.822[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-11 16:13:05.018[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2361365c
+[0;39m[32m2024-08-11 16:13:05.019[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-11 16:13:05.636[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-11 16:13:05.690[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:13:05.694[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext[0;39m - [33mException encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mailConfig': Injection of autowired dependencies failed
+[0;39m[32m2024-08-11 16:13:05.695[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:13:05.696[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-11 16:13:05.701[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-11 16:13:05.702[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStopping service [Tomcat]
+[0;39m[32m2024-08-11 16:13:05.712[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger[0;39m - [33m
 
-Using generated security password: 47b0579e-552b-41f9-9b60-25026d83845b
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[0;39m[32m2024-08-11 16:13:05.722[0;39m [35m[main][0;39m [1;31mERROR[0;39m [36morg.springframework.boot.SpringApplication[0;39m - [33mApplication run failed
+[0;39morg.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mailConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.mnsoo.board.BulletinBoardApplication.main(BulletinBoardApplication.java:14)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.mail.username.' in value "${spring.mail.username.}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	... 17 common frames omitted
+[32m2024-08-11 16:15:19.471[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-11 16:15:19.493[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 52357 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-11 16:15:19.494[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-11 16:15:20.019[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-11 16:15:20.052[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+[0;39m[32m2024-08-11 16:15:20.424[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-11 16:15:20.435[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:15:20.436[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-11 16:15:20.436[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-11 16:15:20.471[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-11 16:15:20.472[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 954 ms
+[0;39m[32m2024-08-11 16:15:20.565[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-11 16:15:20.601[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-11 16:15:20.621[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-11 16:15:20.821[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-11 16:15:20.841[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-11 16:15:21.029[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24b38e8f
+[0;39m[32m2024-08-11 16:15:21.030[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-11 16:15:21.645[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-11 16:15:21.689[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:15:21.695[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext[0;39m - [33mException encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 's3Config': Injection of autowired dependencies failed
+[0;39m[32m2024-08-11 16:15:21.695[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:15:21.697[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-11 16:15:21.702[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-11 16:15:21.703[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStopping service [Tomcat]
+[0;39m[32m2024-08-11 16:15:21.713[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger[0;39m - [33m
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[0;39m[32m2024-08-11 16:15:21.723[0;39m [35m[main][0;39m [1;31mERROR[0;39m [36morg.springframework.boot.SpringApplication[0;39m - [33mApplication run failed
+[0;39morg.springframework.beans.factory.BeanCreationException: Error creating bean with name 's3Config': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.mnsoo.board.BulletinBoardApplication.main(BulletinBoardApplication.java:14)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'AWS_ACCESS_KEY' in value "${AWS_ACCESS_KEY}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:230)
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:80)
+	at org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertyResolver.getProperty(ConfigurationPropertySourcesPropertyResolver.java:61)
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:552)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:153)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$1.getProperty(PropertySourcesPlaceholderConfigurer.java:149)
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:85)
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getPropertyAsRawString(PropertySourcesPropertyResolver.java:74)
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:153)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	... 17 common frames omitted
+[32m2024-08-11 16:25:51.566[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-11 16:25:51.590[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 52616 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-11 16:25:51.591[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-11 16:25:52.097[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-11 16:25:52.131[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+[0;39m[32m2024-08-11 16:25:52.533[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-11 16:25:52.539[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:25:52.540[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-11 16:25:52.540[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-11 16:25:52.573[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-11 16:25:52.573[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 959 ms
+[0;39m[32m2024-08-11 16:25:52.667[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-11 16:25:52.703[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-11 16:25:52.724[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-11 16:25:52.919[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-11 16:25:52.934[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-11 16:25:53.123[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@69372c1e
+[0;39m[32m2024-08-11 16:25:53.124[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-11 16:25:53.755[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-11 16:25:53.809[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:25:54.353[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
+
+Using generated security password: 656977e1-be13-4cb9-a4ac-846eb05f1325
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-[0;39m[32m2024-08-09 16:18:13.570[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[0;39m[32m2024-08-09 16:18:13.726[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2acbbee4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3446ab40, org.springframework.security.web.context.SecurityContextHolderFilter@5ed6a36a, org.springframework.security.web.header.HeaderWriterFilter@58dd584a, org.springframework.web.filter.CorsFilter@500d4de8, org.springframework.security.web.authentication.logout.LogoutFilter@24032706, com.mnsoo.board.security.JwtFilter@43851574, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35ab83a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1150b923, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@344eaf7e, org.springframework.security.web.session.SessionManagementFilter@21f9764, org.springframework.security.web.access.ExceptionTranslationFilter@73b63917, org.springframework.security.web.access.intercept.AuthorizationFilter@5988e36e]
-[0;39m[32m2024-08-09 16:18:13.898[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
-[0;39m[32m2024-08-09 16:18:13.908[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
-[0;39m[32m2024-08-09 16:18:13.916[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 3.317 seconds (process running for 3.821)
-[0;39m[32m2024-08-09 16:18:39.639[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring DispatcherServlet 'dispatcherServlet'
-[0;39m[32m2024-08-09 16:18:39.640[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mInitializing Servlet 'dispatcherServlet'
-[0;39m[32m2024-08-09 16:18:39.641[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mCompleted initialization in 1 ms
-[0;39m[32m2024-08-09 16:18:39.655[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/users/auth/signin
-[0;39m[32m2024-08-09 16:18:39.655[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mAccess token is null, proceeding without authentication.
-[0;39m[32m2024-08-09 16:18:39.708[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.UserService[0;39m - [33mSigning in user 'mnsoo'
-[0;39m[32m2024-08-09 16:18:39.995[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.UserService[0;39m - [33mJWT added to response to user 'mnsoo'
-[0;39m[32m2024-08-09 16:18:39.995[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.UserService[0;39m - [33mUser 'mnsoo' signed in successfully
-[0;39m[32m2024-08-09 16:18:40.010[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/users/auth/signin
-[0;39m[32m2024-08-09 16:19:27.845[0;39m [35m[http-nio-8080-exec-3][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/write
-[0;39m[32m2024-08-09 16:19:27.847[0;39m [35m[http-nio-8080-exec-3][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mAccess token is null, proceeding without authentication.
-[0;39m[32m2024-08-09 16:19:27.849[0;39m [35m[http-nio-8080-exec-3][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/write
-[0;39m[32m2024-08-09 16:19:56.593[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/write
-[0;39m[32m2024-08-09 16:19:56.638[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
-[0;39m[32m2024-08-09 16:19:56.640[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
-[0;39m[32m2024-08-09 16:19:56.641[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/write
-[0;39m[32m2024-08-09 16:20:01.926[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
-[0;39m[32m2024-08-09 16:20:01.927[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
-[0;39m[32m2024-08-09 16:20:01.933[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
-[0;39m[32m2024-08-09 16:20:30.224[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
-[0;39m[32m2024-08-09 16:20:30.260[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 45132 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
-[0;39m[32m2024-08-09 16:20:30.260[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
-[0;39m[32m2024-08-09 16:20:30.995[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
-[0;39m[32m2024-08-09 16:20:31.027[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
-[0;39m[32m2024-08-09 16:20:31.373[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
-[0;39m[32m2024-08-09 16:20:31.379[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
-[0;39m[32m2024-08-09 16:20:31.380[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
-[0;39m[32m2024-08-09 16:20:31.380[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
-[0;39m[32m2024-08-09 16:20:31.416[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
-[0;39m[32m2024-08-09 16:20:31.416[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 1113 ms
-[0;39m[32m2024-08-09 16:20:31.506[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
-[0;39m[32m2024-08-09 16:20:31.535[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
-[0;39m[32m2024-08-09 16:20:31.552[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
-[0;39m[32m2024-08-09 16:20:31.739[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
-[0;39m[32m2024-08-09 16:20:31.753[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
-[0;39m[32m2024-08-09 16:20:31.927[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2125535d
-[0;39m[32m2024-08-09 16:20:31.928[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
-[0;39m[32m2024-08-09 16:20:32.520[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[0;39m[32m2024-08-09 16:20:32.572[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
-[0;39m[32m2024-08-09 16:20:32.837[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
+[0;39m[32m2024-08-11 16:25:54.357[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[0;39m[32m2024-08-11 16:25:54.509[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b5f91a5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@375dc95c, org.springframework.security.web.context.SecurityContextHolderFilter@4cae7d5, org.springframework.security.web.header.HeaderWriterFilter@357f0cc9, org.springframework.web.filter.CorsFilter@33ef701e, org.springframework.security.web.authentication.logout.LogoutFilter@2810d9, com.mnsoo.board.security.JwtFilter@1fd1deed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4390b78f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70290678, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@814b60b, org.springframework.security.web.session.SessionManagementFilter@5713e261, org.springframework.security.web.access.ExceptionTranslationFilter@4528a871, org.springframework.security.web.access.intercept.AuthorizationFilter@4ec25389]
+[0;39m[32m2024-08-11 16:25:54.694[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:25:54.704[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
+[0;39m[32m2024-08-11 16:25:54.715[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 3.417 seconds (process running for 4.145)
+[0;39m[32m2024-08-11 16:26:00.699[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:26:00.700[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-11 16:26:00.704[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-11 16:26:55.452[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-11 16:26:55.474[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 52637 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-11 16:26:55.475[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-11 16:26:55.958[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-11 16:26:55.990[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+[0;39m[32m2024-08-11 16:26:56.400[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-11 16:26:56.406[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:26:56.407[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-11 16:26:56.407[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-11 16:26:56.450[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-11 16:26:56.450[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 953 ms
+[0;39m[32m2024-08-11 16:26:56.545[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-11 16:26:56.582[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-11 16:26:56.603[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-11 16:26:56.870[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-11 16:26:56.892[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-11 16:26:57.082[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24b38e8f
+[0;39m[32m2024-08-11 16:26:57.083[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-11 16:26:57.739[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-11 16:26:57.791[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:26:58.319[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
 
-Using generated security password: 4cc0b5eb-7610-4d85-a348-64eb35adacf8
+Using generated security password: e7e48522-cf68-479c-bba9-a0ae936e71ba
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-[0;39m[32m2024-08-09 16:20:32.841[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[0;39m[32m2024-08-09 16:20:32.983[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3d9dc84d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73625632, org.springframework.security.web.context.SecurityContextHolderFilter@5014ccf9, org.springframework.security.web.header.HeaderWriterFilter@4caca86d, org.springframework.web.filter.CorsFilter@676f70dc, org.springframework.security.web.authentication.logout.LogoutFilter@2292e793, com.mnsoo.board.security.JwtFilter@2591477f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@362109d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3670af2b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@761d3c20, org.springframework.security.web.session.SessionManagementFilter@16a3d9a7, org.springframework.security.web.access.ExceptionTranslationFilter@2c5e2a44, org.springframework.security.web.access.intercept.AuthorizationFilter@7a7698f4]
-[0;39m[32m2024-08-09 16:20:33.152[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
-[0;39m[32m2024-08-09 16:20:33.162[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
-[0;39m[32m2024-08-09 16:20:33.171[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 3.655 seconds (process running for 4.256)
-[0;39m[32m2024-08-09 16:20:39.525[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring DispatcherServlet 'dispatcherServlet'
-[0;39m[32m2024-08-09 16:20:39.525[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mInitializing Servlet 'dispatcherServlet'
-[0;39m[32m2024-08-09 16:20:39.527[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mCompleted initialization in 2 ms
-[0;39m[32m2024-08-09 16:20:39.542[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/write
-[0;39m[32m2024-08-09 16:20:39.598[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
-[0;39m[32m2024-08-09 16:20:39.599[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
-[0;39m[32m2024-08-09 16:20:39.624[0;39m [35m[http-nio-8080-exec-2][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.exception.GlobalExceptionHandler[0;39m - [33mUnexpected Exception occurred
-[0;39morg.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request
-	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.handleParseFailure(StandardMultipartHttpServletRequest.java:131)
-	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.parseRequest(StandardMultipartHttpServletRequest.java:110)
-	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.<init>(StandardMultipartHttpServletRequest.java:86)
-	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.<init>(StandardMultipartHttpServletRequest.java:70)
-	at org.springframework.web.multipart.support.MultipartResolutionDelegate.asMultipartHttpServletRequest(MultipartResolutionDelegate.java:82)
-	at org.springframework.web.multipart.support.RequestPartServletServerHttpRequest.<init>(RequestPartServletServerHttpRequest.java:68)
+[0;39m[32m2024-08-11 16:26:58.324[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[0;39m[32m2024-08-11 16:26:58.487[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2d1dbf4f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f94b2a8, org.springframework.security.web.context.SecurityContextHolderFilter@3c51dec5, org.springframework.security.web.header.HeaderWriterFilter@463e0b6a, org.springframework.web.filter.CorsFilter@2f26634a, org.springframework.security.web.authentication.logout.LogoutFilter@290ebbbe, com.mnsoo.board.security.JwtFilter@2810d9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40e420fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cbf1c30, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@408f3054, org.springframework.security.web.session.SessionManagementFilter@3d2a164e, org.springframework.security.web.access.ExceptionTranslationFilter@44bbf5e3, org.springframework.security.web.access.intercept.AuthorizationFilter@7432cb37]
+[0;39m[32m2024-08-11 16:26:58.666[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:26:58.675[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
+[0;39m[32m2024-08-11 16:26:58.686[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 3.504 seconds (process running for 3.839)
+[0;39m[32m2024-08-11 16:29:29.828[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m[32m2024-08-11 16:29:29.829[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mInitializing Servlet 'dispatcherServlet'
+[0;39m[32m2024-08-11 16:29:29.839[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mCompleted initialization in 10 ms
+[0;39m[32m2024-08-11 16:29:29.864[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/users/auth/signin
+[0;39m[32m2024-08-11 16:29:29.864[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mAccess token is null, proceeding without authentication.
+[0;39m[32m2024-08-11 16:29:29.908[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.UserService[0;39m - [33mSigning in user 'mnsoo'
+[0;39m[32m2024-08-11 16:29:30.205[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.UserService[0;39m - [33mJWT added to response to user 'mnsoo'
+[0;39m[32m2024-08-11 16:29:30.205[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.UserService[0;39m - [33mUser 'mnsoo' signed in successfully
+[0;39m[32m2024-08-11 16:29:30.221[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/users/auth/signin
+[0;39m[32m2024-08-11 16:30:55.678[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/write
+[0;39m[32m2024-08-11 16:30:55.714[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:30:55.717[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:30:55.723[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/write
+[0;39m[32m2024-08-11 16:31:39.869[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:31:39.872[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-11 16:31:39.885[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-11 16:32:04.371[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-11 16:32:04.393[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 52778 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-11 16:32:04.394[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-11 16:32:04.873[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-11 16:32:04.908[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+[0;39m[32m2024-08-11 16:32:05.282[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-11 16:32:05.288[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:32:05.289[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-11 16:32:05.290[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-11 16:32:05.330[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-11 16:32:05.330[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 913 ms
+[0;39m[32m2024-08-11 16:32:05.425[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-11 16:32:05.460[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-11 16:32:05.480[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-11 16:32:05.667[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-11 16:32:05.682[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-11 16:32:05.870[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a2653a0
+[0;39m[32m2024-08-11 16:32:05.871[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-11 16:32:06.483[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-11 16:32:06.543[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:32:07.067[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
+
+Using generated security password: 40e57464-12cb-4dcc-8c87-7c701a4953de
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[0;39m[32m2024-08-11 16:32:07.071[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[0;39m[32m2024-08-11 16:32:07.227[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7602da1a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d985720, org.springframework.security.web.context.SecurityContextHolderFilter@3725471, org.springframework.security.web.header.HeaderWriterFilter@44bbf5e3, org.springframework.web.filter.CorsFilter@2d1dbf4f, org.springframework.security.web.authentication.logout.LogoutFilter@6cc91654, com.mnsoo.board.security.JwtFilter@4f94b2a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c51dec5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40e420fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f26634a, org.springframework.security.web.session.SessionManagementFilter@463e0b6a, org.springframework.security.web.access.ExceptionTranslationFilter@3b538e2a, org.springframework.security.web.access.intercept.AuthorizationFilter@9124278]
+[0;39m[32m2024-08-11 16:32:07.402[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:32:07.412[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
+[0;39m[32m2024-08-11 16:32:07.423[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 3.326 seconds (process running for 3.852)
+[0;39m[32m2024-08-11 16:32:15.385[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m[32m2024-08-11 16:32:15.386[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mInitializing Servlet 'dispatcherServlet'
+[0;39m[32m2024-08-11 16:32:15.387[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mCompleted initialization in 1 ms
+[0;39m[32m2024-08-11 16:32:15.400[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/write
+[0;39m[32m2024-08-11 16:32:15.441[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:32:15.442[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:32:15.444[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/write
+[0;39m[32m2024-08-11 16:32:18.530[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:32:18.531[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-11 16:32:18.535[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-11 16:32:34.244[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-11 16:32:34.271[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 52793 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-11 16:32:34.272[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-11 16:32:34.926[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-11 16:32:34.958[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+[0;39m[32m2024-08-11 16:32:35.330[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-11 16:32:35.336[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:32:35.337[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-11 16:32:35.337[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-11 16:32:35.381[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-11 16:32:35.381[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 1082 ms
+[0;39m[32m2024-08-11 16:32:35.473[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-11 16:32:35.510[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-11 16:32:35.530[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-11 16:32:35.725[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-11 16:32:35.740[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-11 16:32:35.918[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56d5460f
+[0;39m[32m2024-08-11 16:32:35.919[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-11 16:32:36.537[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-11 16:32:36.586[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:32:37.147[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
+
+Using generated security password: 923d8b8f-933d-488e-b1f7-fa3d5d74fe65
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[0;39m[32m2024-08-11 16:32:37.151[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[0;39m[32m2024-08-11 16:32:37.297[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext[0;39m - [33mException encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'filterChain' defined in class path resource [com/mnsoo/board/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: ROLE_USER should not start with ROLE_ since ROLE_ is automatically prepended when using hasAnyRole. Consider using hasAnyAuthority instead.
+[0;39m[32m2024-08-11 16:32:37.299[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:32:37.299[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-11 16:32:37.305[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-11 16:32:37.306[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStopping service [Tomcat]
+[0;39m[32m2024-08-11 16:32:37.316[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger[0;39m - [33m
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[0;39m[32m2024-08-11 16:32:37.325[0;39m [35m[main][0;39m [1;31mERROR[0;39m [36morg.springframework.boot.SpringApplication[0;39m - [33mApplication run failed
+[0;39morg.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'filterChain' defined in class path resource [com/mnsoo/board/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: ROLE_USER should not start with ROLE_ since ROLE_ is automatically prepended when using hasAnyRole. Consider using hasAnyAuthority instead.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:895)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:848)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1421)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.mnsoo.board.BulletinBoardApplication.main(BulletinBoardApplication.java:14)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'filterChain' defined in class path resource [com/mnsoo/board/config/SecurityConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: ROLE_USER should not start with ROLE_ since ROLE_ is automatically prepended when using hasAnyRole. Consider using hasAnyAuthority instead.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1689)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1653)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1511)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1392)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:887)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'filterChain' threw exception with message: ROLE_USER should not start with ROLE_ since ROLE_ is automatically prepended when using hasAnyRole. Consider using hasAnyAuthority instead.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 37 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ROLE_USER should not start with ROLE_ since ROLE_ is automatically prepended when using hasAnyRole. Consider using hasAnyAuthority instead.
+	at org.springframework.util.Assert.isTrue(Assert.java:129)
+	at org.springframework.security.authorization.AuthorityAuthorizationManager.toNamedRolesArray(AuthorityAuthorizationManager.java:128)
+	at org.springframework.security.authorization.AuthorityAuthorizationManager.hasAnyRole(AuthorityAuthorizationManager.java:108)
+	at org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer$AuthorizedUrl.hasRole(AuthorizeHttpRequestsConfigurer.java:307)
+	at com.mnsoo.board.config.SecurityConfig.lambda$filterChain$4(SecurityConfig.java:66)
+	at org.springframework.security.config.annotation.web.builders.HttpSecurity.authorizeHttpRequests(HttpSecurity.java:1467)
+	at com.mnsoo.board.config.SecurityConfig.filterChain(SecurityConfig.java:63)
+	at com.mnsoo.board.config.SecurityConfig$$SpringCGLIB$$0.CGLIB$filterChain$0(<generated>)
+	at com.mnsoo.board.config.SecurityConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:339)
+	at com.mnsoo.board.config.SecurityConfig$$SpringCGLIB$$0.filterChain(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 38 common frames omitted
+[32m2024-08-11 16:33:11.969[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-11 16:33:11.998[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 52820 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-11 16:33:11.999[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-11 16:33:12.570[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-11 16:33:12.604[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 29 ms. Found 2 JPA repository interfaces.
+[0;39m[32m2024-08-11 16:33:12.975[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-11 16:33:12.981[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:33:12.982[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-11 16:33:12.982[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-11 16:33:13.014[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-11 16:33:13.015[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 979 ms
+[0;39m[32m2024-08-11 16:33:13.105[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-11 16:33:13.141[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-11 16:33:13.161[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-11 16:33:13.354[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-11 16:33:13.370[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-11 16:33:13.549[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5cf072ea
+[0;39m[32m2024-08-11 16:33:13.550[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-11 16:33:14.179[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-11 16:33:14.234[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:33:14.766[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
+
+Using generated security password: eb7ef8ae-81bb-421e-a441-95f7daf66cca
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[0;39m[32m2024-08-11 16:33:14.770[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[0;39m[32m2024-08-11 16:33:14.929[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f94b2a8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f26634a, org.springframework.security.web.context.SecurityContextHolderFilter@51a42767, org.springframework.security.web.header.HeaderWriterFilter@2625eb84, org.springframework.web.filter.CorsFilter@2810d9, org.springframework.security.web.authentication.logout.LogoutFilter@7ae2f5b6, com.mnsoo.board.security.JwtFilter@408f3054, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7eaa52d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c5095df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a64cb1f, org.springframework.security.web.session.SessionManagementFilter@3725471, org.springframework.security.web.access.ExceptionTranslationFilter@613bebb9, org.springframework.security.web.access.intercept.AuthorizationFilter@7602da1a]
+[0;39m[32m2024-08-11 16:33:15.116[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:33:15.126[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
+[0;39m[32m2024-08-11 16:33:15.136[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 3.489 seconds (process running for 3.911)
+[0;39m[32m2024-08-11 16:33:18.593[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m[32m2024-08-11 16:33:18.594[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mInitializing Servlet 'dispatcherServlet'
+[0;39m[32m2024-08-11 16:33:18.595[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mCompleted initialization in 1 ms
+[0;39m[32m2024-08-11 16:33:18.607[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/write
+[0;39m[32m2024-08-11 16:33:18.645[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:33:18.647[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:33:18.649[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/write
+[0;39m[32m2024-08-11 16:33:25.554[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:33:25.555[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-11 16:33:25.560[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-11 16:33:28.665[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-11 16:33:28.738[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 52828 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-11 16:33:28.739[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-11 16:33:29.334[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-11 16:33:29.366[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+[0;39m[32m2024-08-11 16:33:29.737[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-11 16:33:29.747[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:33:29.748[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-11 16:33:29.748[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-11 16:33:29.784[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-11 16:33:29.784[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 1000 ms
+[0;39m[32m2024-08-11 16:33:29.879[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-11 16:33:29.912[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-11 16:33:29.931[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-11 16:33:30.127[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-11 16:33:30.142[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-11 16:33:30.330[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72b10258
+[0;39m[32m2024-08-11 16:33:30.331[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-11 16:33:30.968[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-11 16:33:31.009[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:33:31.557[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
+
+Using generated security password: f9050cb2-1dbe-44f2-ab1c-e4210b4210e2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[0;39m[32m2024-08-11 16:33:31.562[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[0;39m[32m2024-08-11 16:33:31.712[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@814b60b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@515a897c, org.springframework.security.web.context.SecurityContextHolderFilter@70290678, org.springframework.security.web.header.HeaderWriterFilter@16bed816, org.springframework.web.filter.CorsFilter@197d6cc9, org.springframework.security.web.authentication.logout.LogoutFilter@76aab1e3, com.mnsoo.board.security.JwtFilter@8caffbd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a73b74c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c58212, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25c3a441, org.springframework.security.web.session.SessionManagementFilter@4c821dc7, org.springframework.security.web.access.ExceptionTranslationFilter@5713e261, org.springframework.security.web.access.intercept.AuthorizationFilter@375dc95c]
+[0;39m[32m2024-08-11 16:33:31.903[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:33:31.914[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
+[0;39m[32m2024-08-11 16:33:31.925[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 3.826 seconds (process running for 4.323)
+[0;39m[32m2024-08-11 16:33:31.951[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m[32m2024-08-11 16:33:31.951[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mInitializing Servlet 'dispatcherServlet'
+[0;39m[32m2024-08-11 16:33:31.952[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mCompleted initialization in 1 ms
+[0;39m[32m2024-08-11 16:33:31.962[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/users/auth/signin
+[0;39m[32m2024-08-11 16:33:31.962[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mAccess token is null, proceeding without authentication.
+[0;39m[32m2024-08-11 16:33:31.981[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.UserService[0;39m - [33mSigning in user 'mnsoo'
+[0;39m[32m2024-08-11 16:33:32.268[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.UserService[0;39m - [33mJWT added to response to user 'mnsoo'
+[0;39m[32m2024-08-11 16:33:32.268[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.UserService[0;39m - [33mUser 'mnsoo' signed in successfully
+[0;39m[32m2024-08-11 16:33:32.281[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/users/auth/signin
+[0;39m[32m2024-08-11 16:33:48.930[0;39m [35m[http-nio-8080-exec-3][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/write
+[0;39m[32m2024-08-11 16:33:48.961[0;39m [35m[http-nio-8080-exec-3][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:33:48.962[0;39m [35m[http-nio-8080-exec-3][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:33:48.963[0;39m [35m[http-nio-8080-exec-3][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/write
+[0;39m[32m2024-08-11 16:37:30.471[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/post/write
+[0;39m[32m2024-08-11 16:37:30.479[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:37:30.479[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:37:30.521[0;39m [35m[http-nio-8080-exec-5][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.exception.GlobalExceptionHandler[0;39m - [33mUnexpected Exception occurred
+[0;39morg.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'postDto' is not present.
+	at org.springframework.web.multipart.support.RequestPartServletServerHttpRequest.<init>(RequestPartServletServerHttpRequest.java:73)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver.resolveArgument(RequestPartMethodArgumentResolver.java:140)
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
 	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
@@ -191,33 +546,118 @@ This generated password is for development use only. Your security configuration
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: jakarta.servlet.ServletException: org.apache.tomcat.util.http.fileupload.impl.InvalidContentTypeException: the request doesn't contain a multipart/form-data or multipart/mixed stream, content type header is null
-	at org.apache.catalina.connector.Request.parseParts(Request.java:2624)
-	at org.apache.catalina.connector.Request.getParts(Request.java:2487)
-	at org.apache.catalina.connector.RequestFacade.getParts(RequestFacade.java:773)
-	at jakarta.servlet.http.HttpServletRequestWrapper.getParts(HttpServletRequestWrapper.java:315)
-	at jakarta.servlet.http.HttpServletRequestWrapper.getParts(HttpServletRequestWrapper.java:315)
-	at jakarta.servlet.http.HttpServletRequestWrapper.getParts(HttpServletRequestWrapper.java:315)
-	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest.parseRequest(StandardMultipartHttpServletRequest.java:93)
-	... 102 common frames omitted
-Caused by: org.apache.tomcat.util.http.fileupload.impl.InvalidContentTypeException: the request doesn't contain a multipart/form-data or multipart/mixed stream, content type header is null
-	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.init(FileItemIteratorImpl.java:151)
-	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.getMultiPartStream(FileItemIteratorImpl.java:205)
-	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.findNextItem(FileItemIteratorImpl.java:224)
-	at org.apache.tomcat.util.http.fileupload.impl.FileItemIteratorImpl.<init>(FileItemIteratorImpl.java:142)
-	at org.apache.tomcat.util.http.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:252)
-	at org.apache.tomcat.util.http.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:276)
-	at org.apache.catalina.connector.Request.parseParts(Request.java:2587)
-	... 108 common frames omitted
-[32m2024-08-09 16:20:39.637[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/write
-[0;39m[32m2024-08-09 16:22:30.516[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/write
-[0;39m[32m2024-08-09 16:22:30.524[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
-[0;39m[32m2024-08-09 16:22:30.524[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
-[0;39m[32m2024-08-09 16:22:30.570[0;39m [35m[http-nio-8080-exec-4][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.exception.GlobalExceptionHandler[0;39m - [33mUnexpected Exception occurred
-[0;39morg.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('t' (code 116)): was expecting double-quote to start field name
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:406)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354)
-	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:184)
+[32m2024-08-11 16:37:30.528[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/post/write
+[0;39m[32m2024-08-11 16:38:13.640[0;39m [35m[http-nio-8080-exec-7][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/post/write
+[0;39m[32m2024-08-11 16:38:13.642[0;39m [35m[http-nio-8080-exec-7][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:38:13.642[0;39m [35m[http-nio-8080-exec-7][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:38:13.648[0;39m [35m[http-nio-8080-exec-7][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.exception.GlobalExceptionHandler[0;39m - [33mUnexpected Exception occurred
+[0;39morg.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'postDto' is not present.
+	at org.springframework.web.multipart.support.RequestPartServletServerHttpRequest.<init>(RequestPartServletServerHttpRequest.java:73)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver.resolveArgument(RequestPartMethodArgumentResolver.java:140)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.mnsoo.board.security.JwtFilter.doFilterInternal(JwtFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[32m2024-08-11 16:38:13.652[0;39m [35m[http-nio-8080-exec-7][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/post/write
+[0;39m[32m2024-08-11 16:38:27.676[0;39m [35m[http-nio-8080-exec-10][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/post/write
+[0;39m[32m2024-08-11 16:38:27.679[0;39m [35m[http-nio-8080-exec-10][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:38:27.679[0;39m [35m[http-nio-8080-exec-10][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:38:27.686[0;39m [35m[http-nio-8080-exec-10][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.exception.GlobalExceptionHandler[0;39m - [33mUnexpected Exception occurred
+[0;39morg.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data' is not supported
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:213)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver.resolveArgument(RequestPartMethodArgumentResolver.java:141)
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
 	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
@@ -316,61 +756,303 @@ Caused by: org.apache.tomcat.util.http.fileupload.impl.InvalidContentTypeExcepti
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('t' (code 116)): was expecting double-quote to start field name
- at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 2, column: 4]
-	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2643)
-	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:685)
-	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2103)
-	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1753)
-	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:757)
-	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:181)
-	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
-	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2125)
-	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1501)
-	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395)
-	... 100 common frames omitted
-[32m2024-08-09 16:22:30.573[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/write
-[0;39m[32m2024-08-09 16:23:36.165[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/write
-[0;39m[32m2024-08-09 16:23:36.173[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
-[0;39m[32m2024-08-09 16:23:36.173[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
-[0;39m[32m2024-08-09 16:23:36.364[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.BoardService[0;39m - [33mRegistering post of user 'mnsoo'
-[0;39m[32m2024-08-09 16:23:36.435[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.BoardService[0;39m - [33mPosted successfully
-[0;39m[32m2024-08-09 16:23:36.450[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/write
-[0;39m[32m2024-08-09 16:24:06.273[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
-[0;39m[32m2024-08-09 16:24:06.275[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
-[0;39m[32m2024-08-09 16:24:06.280[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
-[0;39m[32m2024-08-09 17:19:29.674[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
-[0;39m[32m2024-08-09 17:19:29.707[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 48697 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
-[0;39m[32m2024-08-09 17:19:29.708[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
-[0;39m[32m2024-08-09 17:19:30.246[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
-[0;39m[32m2024-08-09 17:19:30.289[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
-[0;39m[32m2024-08-09 17:19:30.696[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
-[0;39m[32m2024-08-09 17:19:30.702[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
-[0;39m[32m2024-08-09 17:19:30.703[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
-[0;39m[32m2024-08-09 17:19:30.703[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
-[0;39m[32m2024-08-09 17:19:30.743[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
-[0;39m[32m2024-08-09 17:19:30.743[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 1007 ms
-[0;39m[32m2024-08-09 17:19:30.837[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
-[0;39m[32m2024-08-09 17:19:30.877[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
-[0;39m[32m2024-08-09 17:19:30.898[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
-[0;39m[32m2024-08-09 17:19:31.093[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
-[0;39m[32m2024-08-09 17:19:31.108[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
-[0;39m[32m2024-08-09 17:19:31.365[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ce6a9bd
-[0;39m[32m2024-08-09 17:19:31.367[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
-[0;39m[32m2024-08-09 17:19:31.987[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[0;39m[32m2024-08-09 17:19:32.047[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
-[0;39m[32m2024-08-09 17:19:32.335[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
+[32m2024-08-11 16:38:27.689[0;39m [35m[http-nio-8080-exec-10][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/post/write
+[0;39m[32m2024-08-11 16:38:33.966[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/post/write
+[0;39m[32m2024-08-11 16:38:33.970[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:38:33.970[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:38:34.024[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.BoardService[0;39m - [33mRegistering post of user 'mnsoo'
+[0;39m[32m2024-08-11 16:38:34.412[0;39m [35m[http-nio-8080-exec-1][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.service.S3Service[0;39m - [33mFailed to upload image
+[0;39mcom.amazonaws.services.s3.model.AmazonS3Exception: The bucket does not allow ACLs (Service: Amazon S3; Status Code: 400; Error Code: AccessControlListNotSupported; Request ID: BA8K1ZS7WDWS7C53; S3 Extended Request ID: xTh4rTaINkQ/8kUanoAVvwvT2ywMYarc2gYroHDVfe2PLIrwpOV78Rz3bxGnhPWmPdWEeklzL9k=; Proxy: null)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleErrorResponse(AmazonHttpClient.java:1879)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleServiceErrorResponse(AmazonHttpClient.java:1418)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1387)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1157)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:814)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:781)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:755)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:715)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:697)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:561)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:541)
+	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5456)
+	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:5403)
+	at com.amazonaws.services.s3.AmazonS3Client.access$300(AmazonS3Client.java:421)
+	at com.amazonaws.services.s3.AmazonS3Client$PutObjectStrategy.invokeServiceCall(AmazonS3Client.java:6532)
+	at com.amazonaws.services.s3.AmazonS3Client.uploadObject(AmazonS3Client.java:1861)
+	at com.amazonaws.services.s3.AmazonS3Client.putObject(AmazonS3Client.java:1821)
+	at com.mnsoo.board.service.S3Service.uploadImage(S3Service.java:60)
+	at com.mnsoo.board.service.S3Service.uploadPostImage(S3Service.java:40)
+	at com.mnsoo.board.service.BoardService.writePost(BoardService.java:61)
+	at com.mnsoo.board.controller.BoardController.writePost(BoardController.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.mnsoo.board.security.JwtFilter.doFilterInternal(JwtFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[32m2024-08-11 16:38:34.414[0;39m [35m[http-nio-8080-exec-1][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.exception.GlobalExceptionHandler[0;39m - [33mRestApiException occurred : ErrorCode = FAILED_TO_UPLOAD_IMAGE message = 이미지 업로드에 실패했습니다.
+[0;39m[32m2024-08-11 16:38:34.419[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/post/write
+[0;39m[32m2024-08-11 16:40:06.743[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/post/write
+[0;39m[32m2024-08-11 16:40:06.750[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:40:06.751[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:40:06.792[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.BoardService[0;39m - [33mRegistering post of user 'mnsoo'
+[0;39m[32m2024-08-11 16:40:07.774[0;39m [35m[http-nio-8080-exec-4][0;39m [31m WARN[0;39m [36mcom.amazonaws.util.Base64[0;39m - [33mJAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+[0;39m[32m2024-08-11 16:40:07.855[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.BoardService[0;39m - [33mPosted successfully
+[0;39m[32m2024-08-11 16:40:07.857[0;39m [35m[http-nio-8080-exec-4][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/post/write
+[0;39m[32m2024-08-11 16:41:13.783[0;39m [35m[http-nio-8080-exec-8][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/users/auth/reissue
+[0;39m[32m2024-08-11 16:41:13.786[0;39m [35m[http-nio-8080-exec-8][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mAccess token is null, proceeding without authentication.
+[0;39m[32m2024-08-11 16:41:13.800[0;39m [35m[http-nio-8080-exec-8][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/users/auth/reissue
+[0;39m[32m2024-08-11 16:43:13.996[0;39m [35m[http-nio-8080-exec-10][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/post/update
+[0;39m[32m2024-08-11 16:43:14.003[0;39m [35m[http-nio-8080-exec-10][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:43:14.003[0;39m [35m[http-nio-8080-exec-10][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:43:14.016[0;39m [35m[http-nio-8080-exec-10][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.exception.GlobalExceptionHandler[0;39m - [33mUnexpected Exception occurred
+[0;39morg.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'postId' for method parameter type Long is not present
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValueInternal(RequestParamMethodArgumentResolver.java:220)
+	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:196)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:126)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:178)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.mnsoo.board.security.JwtFilter.doFilterInternal(JwtFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[32m2024-08-11 16:43:14.020[0;39m [35m[http-nio-8080-exec-10][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/post/update
+[0;39m[32m2024-08-11 16:43:36.935[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/post/update
+[0;39m[32m2024-08-11 16:43:36.939[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:43:36.940[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:43:36.966[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.BoardService[0;39m - [33mUpdating post of user 'mnsoo'
+[0;39m[32m2024-08-11 16:43:38.043[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.BoardService[0;39m - [33mPost '1' updated
+[0;39m[32m2024-08-11 16:43:38.048[0;39m [35m[http-nio-8080-exec-1][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/post/update
+[0;39m[32m2024-08-11 16:44:43.609[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:44:43.612[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-11 16:44:43.617[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-11 16:44:54.986[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-11 16:44:55.008[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 53106 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-11 16:44:55.009[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-11 16:44:55.475[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-11 16:44:55.507[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+[0;39m[32m2024-08-11 16:44:55.870[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-11 16:44:55.880[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:44:55.881[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-11 16:44:55.881[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-11 16:44:55.917[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-11 16:44:55.917[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 886 ms
+[0;39m[32m2024-08-11 16:44:56.006[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-11 16:44:56.035[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-11 16:44:56.052[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-11 16:44:56.236[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-11 16:44:56.254[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-11 16:44:56.437[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77ec9fdb
+[0;39m[32m2024-08-11 16:44:56.438[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-11 16:44:57.032[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-11 16:44:57.083[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:44:57.597[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
 
-Using generated security password: 5cbc985b-10ac-4942-a3ff-225f5cc1e65a
+Using generated security password: 26b85581-5c6b-4e3a-b7d8-a088f601c6b0
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-[0;39m[32m2024-08-09 17:19:32.339[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[0;39m[32m2024-08-09 17:19:32.504[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@80347b2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@eb65fc8, org.springframework.security.web.context.SecurityContextHolderFilter@336b7da4, org.springframework.security.web.header.HeaderWriterFilter@3f1dadeb, org.springframework.web.filter.CorsFilter@5cd5e1b6, org.springframework.security.web.authentication.logout.LogoutFilter@3e1c566d, com.mnsoo.board.security.JwtFilter@220a7f95, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e79b0fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e8633da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@302692b1, org.springframework.security.web.session.SessionManagementFilter@5e81b406, org.springframework.security.web.access.ExceptionTranslationFilter@16575bfe, org.springframework.security.web.access.intercept.AuthorizationFilter@b61aa50]
-[0;39m[32m2024-08-09 17:19:32.688[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
-[0;39m[32m2024-08-09 17:19:32.697[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
-[0;39m[32m2024-08-09 17:19:32.707[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 3.33 seconds (process running for 3.705)
-[0;39m[32m2024-08-09 17:19:36.943[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
-[0;39m[32m2024-08-09 17:19:36.945[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
-[0;39m[32m2024-08-09 17:19:36.951[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-11 16:44:57.601[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[0;39m[32m2024-08-11 16:44:57.756[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@515a897c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@197d6cc9, org.springframework.security.web.context.SecurityContextHolderFilter@2c99419f, org.springframework.security.web.header.HeaderWriterFilter@4cae7d5, org.springframework.web.filter.CorsFilter@8caffbd, org.springframework.security.web.authentication.logout.LogoutFilter@4f9e32f2, com.mnsoo.board.security.JwtFilter@25c3a441, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ce74930, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6236beac, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2057d8ec, org.springframework.security.web.session.SessionManagementFilter@4390b78f, org.springframework.security.web.access.ExceptionTranslationFilter@5b6a9ef6, org.springframework.security.web.access.intercept.AuthorizationFilter@33ef701e]
+[0;39m[32m2024-08-11 16:44:57.930[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-11 16:44:57.940[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
+[0;39m[32m2024-08-11 16:44:57.950[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 3.229 seconds (process running for 3.753)
+[0;39m[32m2024-08-11 16:45:03.149[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring DispatcherServlet 'dispatcherServlet'
+[0;39m[32m2024-08-11 16:45:03.149[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mInitializing Servlet 'dispatcherServlet'
+[0;39m[32m2024-08-11 16:45:03.151[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36morg.springframework.web.servlet.DispatcherServlet[0;39m - [33mCompleted initialization in 1 ms
+[0;39m[32m2024-08-11 16:45:03.163[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mStarting JWTFilter for request: /api/board/post/update
+[0;39m[32m2024-08-11 16:45:03.204[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
+[0;39m[32m2024-08-11 16:45:03.205[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
+[0;39m[32m2024-08-11 16:45:03.354[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.BoardService[0;39m - [33mUpdating post of user 'mnsoo'
+[0;39m[32m2024-08-11 16:45:04.263[0;39m [35m[http-nio-8080-exec-2][0;39m [31m WARN[0;39m [36mcom.amazonaws.util.Base64[0;39m - [33mJAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+[0;39m[32m2024-08-11 16:45:04.334[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.service.BoardService[0;39m - [33mPost '1' updated
+[0;39m[32m2024-08-11 16:45:04.355[0;39m [35m[http-nio-8080-exec-2][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mCompleted JWTFilter for request: /api/board/post/update
+[0;39m[32m2024-08-11 16:45:17.195[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-11 16:45:17.196[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-11 16:45:17.199[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
 [0;39m

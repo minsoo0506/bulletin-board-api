@@ -39,6 +39,11 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
+    /**
+     * 현재 인증된 유저의 메일을 return
+     *
+     * @return 유저 메일
+     */
     public String getCurrentUserEmail () {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -55,7 +60,11 @@ public class UserService {
         }
     }
 
-    // 신규 사용자 정보 등록
+    /**
+     * 신규 사용자의 정보를 등록(회원가입)
+     *
+     * @param signupRequest : 유저의 개인정보
+     */
     public void addUser(AuthDto.SignUp signupRequest) {
 
         log.info("Adding new user '{}'", signupRequest.getUserDto().getLoginId());
@@ -99,6 +108,11 @@ public class UserService {
         }
     }
 
+    /**
+     * 유저가 등록된 유저인지 확인(로그인)
+     *
+     * @param signInRequest : 로그인 id, password
+     */
     public void signIn(AuthDto.SignIn signInRequest){
 
         log.info("Signing in user '{}'", signInRequest.getLoginId());
