@@ -10,6 +10,8 @@ import com.mnsoo.board.type.ErrorCode;
 import java.time.LocalDate;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -124,5 +126,28 @@ public class BoardService {
         postRepository.save(post);
 
         log.info("Post '{}' updated", post.getPostId());
+    }
+
+    /**
+     * 생성일 기준으로 내림차순 페이징 처리된 게시판 목록 반환
+     *
+     * @param pageable : 페이징 처리시 필요 (RequestParam으로 넘겨받은 page, size가 JPA에 의해 자동으로 Pageable로 변환됨)
+     * @return Page<Post>
+     */
+    public Page<Post> getAllPosts(Pageable pageable) {
+
+        return postRepository.findAllByOrderByCreatedAtDesc(pageable);
+    }
+
+    /**
+     * 검색된 문자열이 제목에 포함된 게시글들을 반환(생성일 기준 내림차순)
+     *
+     * @param title : 검색된 문자열
+     * @param pageable : 페이징 처리시 필요
+     * @return Page<Post>
+     */
+    public Page<Post> getPostsByTitle(String title, Pageable pageable) {
+
+        return postRepository.findByTitleContainingOrderByCreatedAtDesc(title, pageable);
     }
 }
