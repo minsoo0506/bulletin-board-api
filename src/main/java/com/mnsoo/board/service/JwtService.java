@@ -52,6 +52,15 @@ public class JwtService {
         return Jwts.parser().verifyWith(secretKey).build().parseSignedClaims(token).getPayload().get("tokenType", String.class);
     }
 
+    /**
+     * JWT 생성
+     *
+     * @param tokenType : 토큰 타입(ACCESS 토큰 / REFRESH 토큰)
+     * @param email : 유저의 email
+     * @param roles : 유저의 권한
+     * @param expiredMs : 만료 시점
+     * @return JWT
+     */
     public String createJwt(String tokenType, String email, List<String> roles, Long expiredMs) {
 
         return Jwts.builder()

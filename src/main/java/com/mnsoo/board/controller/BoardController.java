@@ -10,7 +10,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -22,18 +24,34 @@ public class BoardController {
 
     private final BoardService boardService;
 
-    @PreAuthorize("hasRole('USER')")
-    @PostMapping("/write")
-    public ResponseEntity<SuccessResponse<String>> write(
-            @RequestPart @Valid PostDto post,
+    @PostMapping("/post/write")
+    public ResponseEntity<SuccessResponse<String>> writePost(
+            @RequestPart @Valid PostDto postDto,
             @RequestPart(value = "image", required = false) MultipartFile image
     ){
 
-        boardService.write(post, image);
+        boardService.writePost(postDto, image);
 
         return ResponseEntity.status(HttpStatus.OK).body(
                 SuccessResponse.of(
                         ResponseMessage.POST_WRITE_SUCCESS,
+                        "success"
+                )
+        );
+    }
+
+    @PutMapping("/post/update")
+    public ResponseEntity<SuccessResponse<String>> updatePost(
+            @RequestParam Long postId,
+            @RequestPart(required = false) @Valid PostDto postDto,
+            @RequestPart(value = "image", required = false) MultipartFile image
+    ){
+
+        boardService.updatePost(postId, postDto, image);
+
+        return ResponseEntity.status(HttpStatus.OK).body(
+                SuccessResponse.of(
+                        ResponseMessage.POST_UPDATE_SUCCESS,
                         "success"
                 )
         );

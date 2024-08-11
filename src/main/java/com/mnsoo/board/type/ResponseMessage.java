@@ -10,7 +10,8 @@ public enum ResponseMessage {
     LOGIN_SUCCESS("로그인 성공"),
     TOKEN_ISSUED("토큰 재발급 성공"),
 
-    POST_WRITE_SUCCESS("게시글 등록 성공")
+    POST_WRITE_SUCCESS("게시글 등록 성공"),
+    POST_UPDATE_SUCCESS("게시글 수정 성공")
     ;
 
     private final String message;
