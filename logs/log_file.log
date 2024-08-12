@@ -1296,4 +1296,399 @@ This generated password is for development use only. Your security configuration
 [0;39m[32m2024-08-11 23:33:36.975[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
 [0;39m[32m2024-08-11 23:33:36.976[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
 [0;39m[32m2024-08-11 23:33:36.980[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-12 18:06:55.071[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-12 18:06:55.098[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 61184 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-12 18:06:55.098[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-12 18:06:55.782[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-12 18:06:55.829[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 41 ms. Found 5 JPA repository interfaces.
+[0;39m[32m2024-08-12 18:06:56.279[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-12 18:06:56.291[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-12 18:06:56.292[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-12 18:06:56.292[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-12 18:06:56.327[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-12 18:06:56.328[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 1203 ms
+[0;39m[32m2024-08-12 18:06:56.424[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-12 18:06:56.455[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-12 18:06:56.473[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-12 18:06:56.663[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-12 18:06:56.678[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-12 18:06:56.861[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17e6b7e4
+[0;39m[32m2024-08-12 18:06:56.862[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-12 18:06:57.495[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-12 18:06:57.565[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl[0;39m - [33mGenerationTarget encountered exception accepting command : Error executing DDL "create table post_like (post_like_id bigint not null auto_increment, like bit not null, post_id bigint, user_id bigint, primary key (post_like_id)) engine=InnoDB" via JDBC [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like bit not null, post_id bigint, user_id bigint, primary key (post_like_id)) e' at line 1]
+[0;39morg.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table post_like (post_like_id bigint not null auto_increment, like bit not null, post_id bigint, user_id bigint, primary key (post_like_id)) engine=InnoDB" via JDBC [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like bit not null, post_id bigint, user_id bigint, primary key (post_like_id)) e' at line 1]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:575)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:515)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:315)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:80)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.mnsoo.board.BulletinBoardApplication.main(BulletinBoardApplication.java:14)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like bit not null, post_id bigint, user_id bigint, primary key (post_like_id)) e' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:770)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 37 common frames omitted
+[32m2024-08-12 18:06:57.627[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl[0;39m - [33mGenerationTarget encountered exception accepting command : Error executing DDL "alter table post_like add constraint FKj7iy0k7n3d0vkh8o7ibjna884 foreign key (post_id) references post (post_id)" via JDBC [Table 'bulletin_board_db.post_like' doesn't exist]
+[0;39morg.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table post_like add constraint FKj7iy0k7n3d0vkh8o7ibjna884 foreign key (post_id) references post (post_id)" via JDBC [Table 'bulletin_board_db.post_like' doesn't exist]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:575)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:515)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:447)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:268)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.mnsoo.board.BulletinBoardApplication.main(BulletinBoardApplication.java:14)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bulletin_board_db.post_like' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:770)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 36 common frames omitted
+[32m2024-08-12 18:06:57.628[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl[0;39m - [33mGenerationTarget encountered exception accepting command : Error executing DDL "alter table post_like add constraint FKhuh7nn7libqf645su27ytx21m foreign key (user_id) references user (user_id)" via JDBC [Table 'bulletin_board_db.post_like' doesn't exist]
+[0;39morg.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table post_like add constraint FKhuh7nn7libqf645su27ytx21m foreign key (user_id) references user (user_id)" via JDBC [Table 'bulletin_board_db.post_like' doesn't exist]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:575)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:515)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:447)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:268)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.mnsoo.board.BulletinBoardApplication.main(BulletinBoardApplication.java:14)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bulletin_board_db.post_like' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:770)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 36 common frames omitted
+[32m2024-08-12 18:06:57.666[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-12 18:06:57.875[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.jpa.repository.query.QueryEnhancerFactory[0;39m - [33mHibernate is in classpath; If applicable, HQL parser will be used.
+[0;39m[32m2024-08-12 18:06:58.441[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
+
+Using generated security password: b4784b41-76ac-4de0-a78b-a9ebd361483a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[0;39m[32m2024-08-12 18:06:58.445[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[0;39m[32m2024-08-12 18:06:58.604[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2a7af3d9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c09a369, org.springframework.security.web.context.SecurityContextHolderFilter@6b021959, org.springframework.security.web.header.HeaderWriterFilter@18b378a2, org.springframework.web.filter.CorsFilter@7d968ec1, org.springframework.security.web.authentication.logout.LogoutFilter@42b2a977, com.mnsoo.board.security.JwtFilter@37e44608, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ccd3e52, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@470bef04, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4afd8f16, org.springframework.security.web.session.SessionManagementFilter@6a82d4b4, org.springframework.security.web.access.ExceptionTranslationFilter@5901caf8, org.springframework.security.web.access.intercept.AuthorizationFilter@250268ef]
+[0;39m[32m2024-08-12 18:06:58.786[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-12 18:06:58.796[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
+[0;39m[32m2024-08-12 18:06:58.807[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 4.23 seconds (process running for 4.838)
+[0;39m[32m2024-08-12 18:08:03.649[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-12 18:08:03.652[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-12 18:08:03.657[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-12 18:08:05.340[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-12 18:08:05.373[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 61239 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-12 18:08:05.374[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-12 18:08:05.854[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-12 18:08:05.895[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 36 ms. Found 5 JPA repository interfaces.
+[0;39m[32m2024-08-12 18:08:06.279[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-12 18:08:06.286[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-12 18:08:06.288[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-12 18:08:06.289[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-12 18:08:06.321[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-12 18:08:06.322[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 922 ms
+[0;39m[32m2024-08-12 18:08:06.412[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-12 18:08:06.441[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-12 18:08:06.459[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-12 18:08:06.643[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-12 18:08:06.658[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-12 18:08:06.841[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d80e1b3
+[0;39m[32m2024-08-12 18:08:06.842[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-12 18:08:07.480[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-12 18:08:07.532[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl[0;39m - [33mGenerationTarget encountered exception accepting command : Error executing DDL "create table post_like (post_like_id bigint not null auto_increment, like bit not null, post_id bigint, user_id bigint, primary key (post_like_id)) engine=InnoDB" via JDBC [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like bit not null, post_id bigint, user_id bigint, primary key (post_like_id)) e' at line 1]
+[0;39morg.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table post_like (post_like_id bigint not null auto_increment, like bit not null, post_id bigint, user_id bigint, primary key (post_like_id)) engine=InnoDB" via JDBC [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like bit not null, post_id bigint, user_id bigint, primary key (post_like_id)) e' at line 1]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:575)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:515)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:315)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:80)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.mnsoo.board.BulletinBoardApplication.main(BulletinBoardApplication.java:14)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like bit not null, post_id bigint, user_id bigint, primary key (post_like_id)) e' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:770)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 37 common frames omitted
+[32m2024-08-12 18:08:07.605[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl[0;39m - [33mGenerationTarget encountered exception accepting command : Error executing DDL "alter table post_like add constraint FKj7iy0k7n3d0vkh8o7ibjna884 foreign key (post_id) references post (post_id)" via JDBC [Table 'bulletin_board_db.post_like' doesn't exist]
+[0;39morg.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table post_like add constraint FKj7iy0k7n3d0vkh8o7ibjna884 foreign key (post_id) references post (post_id)" via JDBC [Table 'bulletin_board_db.post_like' doesn't exist]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:575)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:515)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:447)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:268)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.mnsoo.board.BulletinBoardApplication.main(BulletinBoardApplication.java:14)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bulletin_board_db.post_like' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:770)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 36 common frames omitted
+[32m2024-08-12 18:08:07.606[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl[0;39m - [33mGenerationTarget encountered exception accepting command : Error executing DDL "alter table post_like add constraint FKhuh7nn7libqf645su27ytx21m foreign key (user_id) references user (user_id)" via JDBC [Table 'bulletin_board_db.post_like' doesn't exist]
+[0;39morg.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table post_like add constraint FKhuh7nn7libqf645su27ytx21m foreign key (user_id) references user (user_id)" via JDBC [Table 'bulletin_board_db.post_like' doesn't exist]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:575)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:515)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:447)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:268)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1835)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.mnsoo.board.BulletinBoardApplication.main(BulletinBoardApplication.java:14)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'bulletin_board_db.post_like' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:770)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 36 common frames omitted
+[32m2024-08-12 18:08:07.648[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-12 18:08:07.877[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.jpa.repository.query.QueryEnhancerFactory[0;39m - [33mHibernate is in classpath; If applicable, HQL parser will be used.
+[0;39m[32m2024-08-12 18:08:08.447[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
+
+Using generated security password: 47971a16-637c-4b39-b2eb-40d801966bb1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[0;39m[32m2024-08-12 18:08:08.452[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[0;39m[32m2024-08-12 18:08:08.614[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6b021959, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@175957f9, org.springframework.security.web.context.SecurityContextHolderFilter@35014251, org.springframework.security.web.header.HeaderWriterFilter@2ec3d746, org.springframework.web.filter.CorsFilter@ccd3e52, org.springframework.security.web.authentication.logout.LogoutFilter@53b83e49, com.mnsoo.board.security.JwtFilter@3c38f10b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4dba7f3c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34fcbc36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@470bef04, org.springframework.security.web.session.SessionManagementFilter@7be7236d, org.springframework.security.web.access.ExceptionTranslationFilter@70de1e65, org.springframework.security.web.access.intercept.AuthorizationFilter@6a82d4b4]
+[0;39m[32m2024-08-12 18:08:08.802[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-12 18:08:08.812[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
+[0;39m[32m2024-08-12 18:08:08.823[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 3.748 seconds (process running for 4.043)
+[0;39m[32m2024-08-12 18:09:00.271[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-12 18:09:00.275[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-12 18:09:00.281[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
+[0;39m[32m2024-08-12 18:10:30.454[0;39m [35m[background-preinit][0;39m [34m INFO[0;39m [36morg.hibernate.validator.internal.util.Version[0;39m - [33mHV000001: Hibernate Validator 8.0.1.Final
+[0;39m[32m2024-08-12 18:10:30.475[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarting BulletinBoardApplication using Java 17.0.10 with PID 61311 (/Users/mnsoo/Desktop/zerobase/bulletin-board/build/classes/java/main started by mnsoo in /Users/mnsoo/Desktop/zerobase/bulletin-board)
+[0;39m[32m2024-08-12 18:10:30.475[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mThe following 1 profile is active: "local"
+[0;39m[32m2024-08-12 18:10:30.980[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mBootstrapping Spring Data JPA repositories in DEFAULT mode.
+[0;39m[32m2024-08-12 18:10:31.017[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - [33mFinished Spring Data repository scanning in 33 ms. Found 5 JPA repository interfaces.
+[0;39m[32m2024-08-12 18:10:31.398[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat initialized with port 8080 (http)
+[0;39m[32m2024-08-12 18:10:31.410[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-12 18:10:31.411[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardService[0;39m - [33mStarting service [Tomcat]
+[0;39m[32m2024-08-12 18:10:31.411[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - [33mStarting Servlet engine: [Apache Tomcat/10.1.24]
+[0;39m[32m2024-08-12 18:10:31.446[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - [33mInitializing Spring embedded WebApplicationContext
+[0;39m[32m2024-08-12 18:10:31.446[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m - [33mRoot WebApplicationContext: initialization completed in 948 ms
+[0;39m[32m2024-08-12 18:10:31.538[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - [33mHHH000204: Processing PersistenceUnitInfo [name: default]
+[0;39m[32m2024-08-12 18:10:31.567[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.Version[0;39m - [33mHHH000412: Hibernate ORM core version 6.5.2.Final
+[0;39m[32m2024-08-12 18:10:31.585[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.cache.internal.RegionFactoryInitiator[0;39m - [33mHHH000026: Second-level cache disabled
+[0;39m[32m2024-08-12 18:10:31.772[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo[0;39m - [33mNo LoadTimeWeaver setup: ignoring JPA class transformer
+[0;39m[32m2024-08-12 18:10:31.787[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Starting...
+[0;39m[32m2024-08-12 18:10:31.968[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.pool.HikariPool[0;39m - [33mHikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44c27b8b
+[0;39m[32m2024-08-12 18:10:31.969[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Start completed.
+[0;39m[32m2024-08-12 18:10:32.612[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator[0;39m - [33mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[0;39m[32m2024-08-12 18:10:32.725[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mInitialized JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-12 18:10:32.917[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.data.jpa.repository.query.QueryEnhancerFactory[0;39m - [33mHibernate is in classpath; If applicable, HQL parser will be used.
+[0;39m[32m2024-08-12 18:10:33.499[0;39m [35m[main][0;39m [31m WARN[0;39m [36morg.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration[0;39m - [33m
+
+Using generated security password: 72d9242d-1bcf-4ffd-9c75-386a96f7e769
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[0;39m[32m2024-08-12 18:10:33.504[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer[0;39m - [33mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[0;39m[32m2024-08-12 18:10:33.659[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.security.web.DefaultSecurityFilterChain[0;39m - [33mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5901caf8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e39b656, org.springframework.security.web.context.SecurityContextHolderFilter@70de1e65, org.springframework.security.web.header.HeaderWriterFilter@f0ead61, org.springframework.web.filter.CorsFilter@18b378a2, org.springframework.security.web.authentication.logout.LogoutFilter@57e6fd09, com.mnsoo.board.security.JwtFilter@3d039fe6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ec3d746, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7be7236d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a82d4b4, org.springframework.security.web.session.SessionManagementFilter@27551c3a, org.springframework.security.web.access.ExceptionTranslationFilter@56221350, org.springframework.security.web.access.intercept.AuthorizationFilter@75c858e6]
+[0;39m[32m2024-08-12 18:10:33.844[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - [33mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[32m2024-08-12 18:10:33.854[0;39m [35m[main][0;39m [34m INFO[0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - [33mTomcat started on port 8080 (http) with context path '/'
+[0;39m[32m2024-08-12 18:10:33.866[0;39m [35m[main][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.BulletinBoardApplication[0;39m - [33mStarted BulletinBoardApplication in 3.69 seconds (process running for 4.322)
+[0;39m[32m2024-08-12 18:10:42.301[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36morg.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean[0;39m - [33mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m[32m2024-08-12 18:10:42.302[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown initiated...
+[0;39m[32m2024-08-12 18:10:42.306[0;39m [35m[SpringApplicationShutdownHook][0;39m [34m INFO[0;39m [36mcom.zaxxer.hikari.HikariDataSource[0;39m - [33mHikariPool-1 - Shutdown completed.
 [0;39m

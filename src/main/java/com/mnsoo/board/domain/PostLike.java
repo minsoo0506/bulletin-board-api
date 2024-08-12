@@ -12,7 +12,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.joda.time.LocalDateTime;
 
 @Entity
 @Getter
@@ -35,5 +34,5 @@ public class PostLike {
     private Post post;
 
     @Column(nullable = false)
-    private boolean like;
+    private boolean isLiked;
 }

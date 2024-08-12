@@ -232,13 +232,13 @@ public class BoardService {
             PostLike postLike = postLikeRepository.findByPostAndUser(post, user);
 
             if(postLike != null){
-                postLike.setLike(!postLike.isLike());
+                postLike.setLiked(!postLike.isLiked());
             } else {
                 postLikeRepository.save(
                         PostLike.builder()
                                 .post(post)
                                 .user(user)
-                                .like(true)
+                                .isLiked(true)
                                 .build()
                 );
             }
