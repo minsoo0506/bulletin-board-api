@@ -12,7 +12,7 @@ public enum ErrorCode {
     BAD_REQUEST(HttpStatus.BAD_REQUEST, "잘못된 요청입니다."),
     INTERNAL_SERVER_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "내부 서부 오류가 발생했습니다."),
 
-    NOT_AUTHENTICATED_USER(HttpStatus.BAD_REQUEST, "인증된 사용자가 없습니다."),
+    NOT_AUTHENTICATED_USER(HttpStatus.BAD_REQUEST, "인증된 사용자가 아닙니다."),
     UNEXPECTED_PRINCIPAL_TYPE(HttpStatus.BAD_REQUEST, "예상하지 못한 Principal 타입입니다."),
 
     ALREADY_REGISTERED_USER(HttpStatus.BAD_REQUEST, "이미 회원가입이 완료된 사용자 압니다."),
@@ -31,7 +31,10 @@ public enum ErrorCode {
     INVALID_IMAGE_FILE_EXTENSION(HttpStatus.BAD_REQUEST, "유효한 이미지 파일이 아닙니다."),
     INVALID_REVIEW_IMAGE_ACTION(HttpStatus.BAD_REQUEST, "유효하지 않은 이미지 업로드 액션입니다."),
     FAILED_TO_UPLOAD_IMAGE(HttpStatus.INTERNAL_SERVER_ERROR, "이미지 업로드에 실패했습니다."),
-    FAILED_TO_DELETE_IMAGE(HttpStatus.INTERNAL_SERVER_ERROR, "이미지 삭제에 실패했습니다.")
+    FAILED_TO_DELETE_IMAGE(HttpStatus.INTERNAL_SERVER_ERROR, "이미지 삭제에 실패했습니다."),
+
+    FAILED_TO_SET_POST_LIKE(HttpStatus.BAD_REQUEST, "좋아요를 누르기 위해서 로그인이 필요합니다."),
+    FAILED_TO_WRITE_COMMENT(HttpStatus.BAD_REQUEST, "댓글을 작성하기 위해서 로그인이 필요합니다.")
     ;
 
     private final HttpStatus httpStatus;

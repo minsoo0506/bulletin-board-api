@@ -145,7 +145,7 @@ Caused by: java.lang.IllegalArgumentException: ROLE_USER should not start with R
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
 	... 38 common frames omitted
 [32m2024-08-11 16:37:30.521[0;39m [35m[http-nio-8080-exec-5][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.exception.GlobalExceptionHandler[0;39m - [33mUnexpected Exception occurred
-[0;39morg.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'postDto' is not present.
+[0;39morg.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'postRequestDto' is not present.
 	at org.springframework.web.multipart.support.RequestPartServletServerHttpRequest.<init>(RequestPartServletServerHttpRequest.java:73)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver.resolveArgument(RequestPartMethodArgumentResolver.java:140)
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
@@ -246,7 +246,7 @@ Caused by: java.lang.IllegalArgumentException: ROLE_USER should not start with R
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:840)
 [32m2024-08-11 16:38:13.648[0;39m [35m[http-nio-8080-exec-7][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.exception.GlobalExceptionHandler[0;39m - [33mUnexpected Exception occurred
-[0;39morg.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'postDto' is not present.
+[0;39morg.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'postRequestDto' is not present.
 	at org.springframework.web.multipart.support.RequestPartServletServerHttpRequest.<init>(RequestPartServletServerHttpRequest.java:73)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver.resolveArgument(RequestPartMethodArgumentResolver.java:140)
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)

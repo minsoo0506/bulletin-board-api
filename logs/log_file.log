@@ -446,7 +446,7 @@ This generated password is for development use only. Your security configuration
 [0;39m[32m2024-08-11 16:37:30.479[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
 [0;39m[32m2024-08-11 16:37:30.479[0;39m [35m[http-nio-8080-exec-5][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
 [0;39m[32m2024-08-11 16:37:30.521[0;39m [35m[http-nio-8080-exec-5][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.exception.GlobalExceptionHandler[0;39m - [33mUnexpected Exception occurred
-[0;39morg.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'postDto' is not present.
+[0;39morg.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'postRequestDto' is not present.
 	at org.springframework.web.multipart.support.RequestPartServletServerHttpRequest.<init>(RequestPartServletServerHttpRequest.java:73)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver.resolveArgument(RequestPartMethodArgumentResolver.java:140)
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
@@ -551,7 +551,7 @@ This generated password is for development use only. Your security configuration
 [0;39m[32m2024-08-11 16:38:13.642[0;39m [35m[http-nio-8080-exec-7][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mToken validated. UserEmail: mnsoo@gmail.com, Roles: [ROLE_USER]
 [0;39m[32m2024-08-11 16:38:13.642[0;39m [35m[http-nio-8080-exec-7][0;39m [34m INFO[0;39m [36mcom.mnsoo.board.security.JwtFilter[0;39m - [33mUser authenticated and set in SecurityContext: mnsoo@gmail.com
 [0;39m[32m2024-08-11 16:38:13.648[0;39m [35m[http-nio-8080-exec-7][0;39m [1;31mERROR[0;39m [36mcom.mnsoo.board.exception.GlobalExceptionHandler[0;39m - [33mUnexpected Exception occurred
-[0;39morg.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'postDto' is not present.
+[0;39morg.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'postRequestDto' is not present.
 	at org.springframework.web.multipart.support.RequestPartServletServerHttpRequest.<init>(RequestPartServletServerHttpRequest.java:73)
 	at org.springframework.web.servlet.mvc.method.annotation.RequestPartMethodArgumentResolver.resolveArgument(RequestPartMethodArgumentResolver.java:140)
 	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)

@@ -2,7 +2,6 @@ package com.mnsoo.board.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -15,7 +14,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.SuperBuilder;
-import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.SQLRestriction;
 
@@ -26,32 +24,22 @@ import org.hibernate.annotations.SQLRestriction;
 @AllArgsConstructor
 @SuperBuilder
 @Inheritance(strategy = InheritanceType.JOINED)
-@SQLDelete(sql = "UPDATE post SET deleted_at = NOW() WHERE post_id = ?")
+@SQLDelete(sql = "UPDATE comment SET deleted_at = NOW() WHERE comment_id = ?")
 @SQLRestriction("deleted_at is null")
-public class Post extends BaseEntity {
+public class Comment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long postId;
+    private Long commentId;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
+    @JoinColumn(name = "post_id")
+    private Post post;
+
+    @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
 
     @Column(nullable = false)
-    private String title;
-
-    @Column(nullable = false)
     private String content;
-
-    @Column
-    private String imgUrl;
-
-    @Column
-    @ColumnDefault("0")
-    private int viewCount;
-
-    @Column
-    @ColumnDefault("0")
-    private int likeCount;
 }

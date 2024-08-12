@@ -13,13 +13,12 @@ import lombok.Setter;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PostDto {
+public class CommentDto {
 
     @NotBlank
-    @Size(max = 200)
-    private String title;
+    private Long postId;
 
     @NotBlank
-    @Size(max = 1000)
+    @Size(max = 500)
     private String content;
 }

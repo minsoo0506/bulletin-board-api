@@ -65,6 +65,7 @@ public class SecurityConfig {
                         .requestMatchers("/", "/api/users/auth/**").permitAll()
                         .requestMatchers("/api/board/posts", "/api/board/posts/**").permitAll()
                         .requestMatchers("/api/board/post/**").hasRole("USER")
+                        .requestMatchers("/api/comment", "api/comment/**").permitAll()
                 );
         //세션 설정 : STATELESS (JWT 기반 인증을 사용하는 경우, 서버는 클라이언트의 상태를 유지할 필요가 없음)
         http

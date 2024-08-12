@@ -1,7 +1,8 @@
 package com.mnsoo.board.controller;
 
 import com.mnsoo.board.domain.Post;
-import com.mnsoo.board.dto.PostDto;
+import com.mnsoo.board.dto.PostRequestDto;
+import com.mnsoo.board.dto.PostResponseDto;
 import com.mnsoo.board.dto.SuccessResponse;
 import com.mnsoo.board.service.BoardService;
 import com.mnsoo.board.type.ResponseMessage;
@@ -29,11 +30,11 @@ public class BoardController {
 
     @PostMapping("/post/write")
     public ResponseEntity<SuccessResponse<String>> writePost(
-            @RequestPart @Valid PostDto postDto,
+            @RequestPart @Valid PostRequestDto postRequestDto,
             @RequestPart(value = "image", required = false) MultipartFile image
     ){
 
-        boardService.writePost(postDto, image);
+        boardService.writePost(postRequestDto, image);
 
         return ResponseEntity.status(HttpStatus.OK).body(
                 SuccessResponse.of(
@@ -46,11 +47,11 @@ public class BoardController {
     @PutMapping("/post/update")
     public ResponseEntity<SuccessResponse<String>> updatePost(
             @RequestParam Long postId,
-            @RequestPart(required = false) @Valid PostDto postDto,
+            @RequestPart(required = false) @Valid PostRequestDto postRequestDto,
             @RequestPart(value = "image", required = false) MultipartFile image
     ){
 
-        boardService.updatePost(postId, postDto, image);
+        boardService.updatePost(postId, postRequestDto, image);
 
         return ResponseEntity.status(HttpStatus.OK).body(
                 SuccessResponse.of(
@@ -61,9 +62,9 @@ public class BoardController {
     }
 
     @GetMapping("/posts")
-    public ResponseEntity<SuccessResponse<Page<Post>>> getAllPosts(Pageable pageable) {
+    public ResponseEntity<SuccessResponse<Page<PostResponseDto.Simple>>> getAllPosts(Pageable pageable) {
 
-        Page<Post> posts = boardService.getAllPosts(pageable);
+        Page<PostResponseDto.Simple> posts = boardService.getAllPosts(pageable);
 
         return ResponseEntity.status(HttpStatus.OK).body(
                 SuccessResponse.of(
@@ -74,12 +75,12 @@ public class BoardController {
     }
 
     @GetMapping("/posts/search")
-    public ResponseEntity<SuccessResponse<Page<Post>>> getPostsByTitle(
+    public ResponseEntity<SuccessResponse<Page<PostResponseDto.Simple>>> getPostsByTitle(
             @RequestParam String title,
             Pageable pageable
     ) {
 
-        Page<Post> posts = boardService.getPostsByTitle(title, pageable);
+        Page<PostResponseDto.Simple> posts = boardService.getPostsByTitle(title, pageable);
 
         if(posts.isEmpty()) {
             return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
@@ -89,6 +90,32 @@ public class BoardController {
                 SuccessResponse.of(
                         ResponseMessage.GET_POSTS_BY_SEARCH_SUCCESS,
                         posts
+                )
+        );
+    }
+
+    @GetMapping("/post/specific")
+    public ResponseEntity<SuccessResponse<PostResponseDto.Specific>> getSpecificPost(@RequestParam Long postId) {
+
+        PostResponseDto.Specific post = boardService.getSpecificPost(postId);
+
+        return ResponseEntity.status(HttpStatus.OK).body(
+                SuccessResponse.of(
+                        ResponseMessage.GET_SPECIFIC_POST_SUCCESS,
+                        post
+                )
+        );
+    }
+
+    @PostMapping("/post/specific/like")
+    public ResponseEntity<SuccessResponse<String>> setPostLike(@RequestParam Long postId) {
+
+        boardService.setPostLike(postId);
+
+        return ResponseEntity.status(HttpStatus.OK).body(
+                SuccessResponse.of(
+                        ResponseMessage.SET_POST_LIKE_SUCCESS,
+                        "success"
                 )
         );
     }
