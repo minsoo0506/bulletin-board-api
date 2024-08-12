@@ -136,6 +136,8 @@ public class BoardService {
      */
     public Page<Post> getAllPosts(Pageable pageable) {
 
+        log.info("Getting all posts order by created date");
+
         return postRepository.findAllByOrderByCreatedAtDesc(pageable);
     }
 
@@ -147,6 +149,8 @@ public class BoardService {
      * @return Page<Post>
      */
     public Page<Post> getPostsByTitle(String title, Pageable pageable) {
+
+        log.info("Getting posts by search query : '{}'", title);
 
         return postRepository.findByTitleContainingOrderByCreatedAtDesc(title, pageable);
     }
