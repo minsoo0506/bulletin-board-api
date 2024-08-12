@@ -18,7 +18,8 @@ public enum ResponseMessage {
     SET_POST_LIKE_SUCCESS("게시글 좋아요 등록 성공"),
 
     COMMENT_WRITE_SUCCESS("댓글 등록 성공"),
-    COMMENT_UPDATE_SUCCESS("댓글 수정 성공")
+    COMMENT_UPDATE_SUCCESS("댓글 수정 성공"),
+    GET_COMMENTS_SUCCESS("해당 게시물에 대한 댓글 조회 성공")
     ;
 
     private final String message;

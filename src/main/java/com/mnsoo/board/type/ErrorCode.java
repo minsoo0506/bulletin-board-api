@@ -34,7 +34,10 @@ public enum ErrorCode {
     FAILED_TO_DELETE_IMAGE(HttpStatus.INTERNAL_SERVER_ERROR, "이미지 삭제에 실패했습니다."),
 
     FAILED_TO_SET_POST_LIKE(HttpStatus.BAD_REQUEST, "좋아요를 누르기 위해서 로그인이 필요합니다."),
-    FAILED_TO_WRITE_COMMENT(HttpStatus.BAD_REQUEST, "댓글을 작성하기 위해서 로그인이 필요합니다.")
+    FAILED_TO_WRITE_COMMENT(HttpStatus.BAD_REQUEST, "댓글을 작성하기 위해서 로그인이 필요합니다."),
+
+    REQUIRED_PARAMETER_NULL(HttpStatus.BAD_REQUEST, "필수값이 빠져있습니다."),
+    COMMENT_NOT_FOUND(HttpStatus.BAD_REQUEST, "해당 댓글을 찾을 수 없습니다.")
     ;
 
     private final HttpStatus httpStatus;

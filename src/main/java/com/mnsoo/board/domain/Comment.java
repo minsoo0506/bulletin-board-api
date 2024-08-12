@@ -26,7 +26,7 @@ import org.hibernate.annotations.SQLRestriction;
 @Inheritance(strategy = InheritanceType.JOINED)
 @SQLDelete(sql = "UPDATE comment SET deleted_at = NOW() WHERE comment_id = ?")
 @SQLRestriction("deleted_at is null")
-public class Comment {
+public class Comment extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
