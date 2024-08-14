@@ -10,6 +10,7 @@ import com.mnsoo.board.repository.CommentRepository;
 import com.mnsoo.board.repository.PostRepository;
 import com.mnsoo.board.repository.UserRepository;
 import com.mnsoo.board.type.ErrorCode;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
@@ -89,6 +90,12 @@ public class CommentService {
         }
     }
 
+    /**
+     * 해당 게시물에 대한 댓글 목록 조회
+     *
+     * @param postId : 게시물의 id
+     * @return List<CommentResponseDto> : 댓글 리스트
+     */
     public List<CommentResponseDto> getComments(Long postId) {
 
         Post post = postRepository.findByPostId(postId)
@@ -96,7 +103,7 @@ public class CommentService {
 
         log.info("Getting comment list of post : post_id '{}'", postId);
 
-        List<Comment> comments = commentRepository.findByPostOrderByCreatedAt(post);
+        List<Comment> comments = commentRepository.findALLByPostOrderByCreatedAt(post);
 
         if(comments.isEmpty()) {
             log.info("No comments for this post : post_id '{}'", postId);
@@ -107,5 +114,20 @@ public class CommentService {
                     .map(CommentResponseDto::fromEntity)
                     .collect(Collectors.toList());
         }
+    }
+
+    /**
+     * 댓글 삭제(soft delete)
+     *
+     * @param commentId : 삭제하고자 하는 댓글의 id
+     */
+    public void deleteComment(Long commentId) {
+
+        log.info("Deleting comment : comment_id '{}'", commentId);
+
+        Comment comment = commentRepository.findByCommentId(commentId)
+                .orElseThrow(() -> new RestApiException(ErrorCode.COMMENT_NOT_FOUND));
+
+        commentRepository.delete(comment);
     }
 }

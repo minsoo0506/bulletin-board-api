@@ -16,10 +16,12 @@ public enum ResponseMessage {
     GET_POSTS_BY_SEARCH_SUCCESS("검색으로 게시글 목록 조회 성공"),
     GET_SPECIFIC_POST_SUCCESS("게시글 상세 정보 조회 성공"),
     SET_POST_LIKE_SUCCESS("게시글 좋아요 등록 성공"),
+    POST_DELETE_SUCCESS("게시글 삭제 성공"),
 
     COMMENT_WRITE_SUCCESS("댓글 등록 성공"),
     COMMENT_UPDATE_SUCCESS("댓글 수정 성공"),
-    GET_COMMENTS_SUCCESS("해당 게시물에 대한 댓글 조회 성공")
+    GET_COMMENTS_SUCCESS("해당 게시물에 대한 댓글 조회 성공"),
+    COMMENT_DELETE_SUCCESS("댓글 삭제 성공")
     ;
 
     private final String message;

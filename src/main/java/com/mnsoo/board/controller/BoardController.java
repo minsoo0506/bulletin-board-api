@@ -12,6 +12,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -115,6 +116,19 @@ public class BoardController {
         return ResponseEntity.status(HttpStatus.OK).body(
                 SuccessResponse.of(
                         ResponseMessage.SET_POST_LIKE_SUCCESS,
+                        "success"
+                )
+        );
+    }
+
+    @DeleteMapping("/post/delete")
+    public ResponseEntity<SuccessResponse<String>> deletePost(@RequestParam Long postId) {
+
+        boardService.deletePost(postId);
+
+        return ResponseEntity.status(HttpStatus.OK).body(
+                SuccessResponse.of(
+                        ResponseMessage.POST_DELETE_SUCCESS,
                         "success"
                 )
         );

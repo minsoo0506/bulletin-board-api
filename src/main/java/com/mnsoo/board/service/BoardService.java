@@ -244,4 +244,19 @@ public class BoardService {
             }
         }
     }
+
+    /**
+     * 게시글 삭제 (soft delete)
+     *
+     * @param postId : 삭제하고자 하는 게시글의 id
+     */
+    public void deletePost(Long postId) {
+
+        log.info("Deleting post : post_id : '{}'", postId);
+
+        Post post = postRepository.findByPostId(postId)
+                .orElseThrow(() -> new RestApiException(ErrorCode.POST_NOT_FOUND));
+
+        postRepository.delete(post);
+    }
 }
