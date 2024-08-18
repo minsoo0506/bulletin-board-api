@@ -239,6 +239,7 @@ public class BoardService {
 
                 if(!postLike.isLiked() && post.getLikeCount() > 0){
                     post.setLikeCount(post.getLikeCount() - 1);
+                    postRepository.save(post);
                 }
 
                 return postLike.isLiked();
