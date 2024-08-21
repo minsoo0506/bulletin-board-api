@@ -1,5 +1,6 @@
 package com.mnsoo.board.config;
 
+import com.mnsoo.board.security.CustomLogoutFilter;
 import com.mnsoo.board.security.JwtFilter;
 import com.mnsoo.board.service.JwtService;
 import jakarta.servlet.http.HttpServletRequest;
@@ -12,6 +13,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.authentication.logout.LogoutFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 
@@ -71,6 +73,9 @@ public class SecurityConfig {
         http
                 .sessionManagement((session) -> session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+        //로그아웃 설정
+        http
+                .addFilterBefore(new CustomLogoutFilter(jwtService), LogoutFilter.class);
 
         return http.build();
     }
