@@ -5,6 +5,7 @@ import com.mnsoo.board.dto.post.PostResponseDto;
 import com.mnsoo.board.dto.SuccessResponse;
 import com.mnsoo.board.service.BoardService;
 import com.mnsoo.board.type.ResponseMessage;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -28,6 +29,7 @@ public class BoardController {
 
     private final BoardService boardService;
 
+    @Operation(summary = "게시글 작성", description = "회원의 권한으로 게시글 작성")
     @PostMapping("/post/write")
     public ResponseEntity<SuccessResponse<String>> writePost(
             @RequestPart @Valid PostRequestDto postRequestDto,
@@ -44,6 +46,7 @@ public class BoardController {
         );
     }
 
+    @Operation(summary = "게시글 수정", description = "게시글 수정 (작성 이후 10일이 지나지 않은 게시글만 수정 가능)")
     @PutMapping("/post/update")
     public ResponseEntity<SuccessResponse<String>> updatePost(
             @RequestParam Long postId,
@@ -61,6 +64,7 @@ public class BoardController {
         );
     }
 
+    @Operation(summary = "게시글 목록 조회", description = "페이징 처리된 게시글 목록 조회")
     @GetMapping("/posts")
     public ResponseEntity<SuccessResponse<Page<PostResponseDto.Simple>>> getAllPosts(Pageable pageable) {
 
@@ -74,6 +78,7 @@ public class BoardController {
         );
     }
 
+    @Operation(summary = "게시글 검색", description = "입력된 검색어가 제목에 포함된 게시글 조회")
     @GetMapping("/posts/search")
     public ResponseEntity<SuccessResponse<Page<PostResponseDto.Simple>>> getPostsByTitle(
             @RequestParam String title,
@@ -94,6 +99,7 @@ public class BoardController {
         );
     }
 
+    @Operation(summary = "게시글 상세 조회", description = "게시글 상세 조회 및 조회수 증가")
     @GetMapping("/post/specific")
     public ResponseEntity<SuccessResponse<PostResponseDto.Specific>> getSpecificPost(@RequestParam Long postId) {
 
@@ -107,6 +113,7 @@ public class BoardController {
         );
     }
 
+    @Operation(summary = "게시글 좋아요", description = "게시글의 좋아요 및 취소 설정")
     @PostMapping("/post/specific/like")
     public ResponseEntity<SuccessResponse<String>> setPostLike(@RequestParam Long postId) {
 
@@ -131,6 +138,7 @@ public class BoardController {
         }
     }
 
+    @Operation(summary = "게시글 삭제", description = "작성자 권한으로 게시글 삭제")
     @DeleteMapping("/post/delete")
     public ResponseEntity<SuccessResponse<String>> deletePost(@RequestParam Long postId) {
 

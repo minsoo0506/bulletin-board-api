@@ -5,6 +5,7 @@ import com.mnsoo.board.dto.comment.CommentResponseDto;
 import com.mnsoo.board.dto.SuccessResponse;
 import com.mnsoo.board.service.CommentService;
 import com.mnsoo.board.type.ResponseMessage;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -26,6 +27,7 @@ public class CommentController {
 
     private final CommentService commentService;
 
+    @Operation(summary = "댓글 작성", description = "게시글에 대한 댓글 작성")
     @PostMapping
     public ResponseEntity<SuccessResponse<String>> writeComment(@RequestBody @Valid CommentRequestDto commentRequestDto) {
 
@@ -39,6 +41,7 @@ public class CommentController {
         );
     }
 
+    @Operation(summary = "댓글 수정", description = "게시글에 대한 댓글 수정")
     @PutMapping
     public ResponseEntity<SuccessResponse<String>> updateComment(@RequestBody @Valid CommentRequestDto commentRequestDto) {
 
@@ -52,6 +55,7 @@ public class CommentController {
         );
     }
 
+    @Operation(summary = "댓글 조회", description = "게시글에 대한 댓글 리스트 조회")
     @GetMapping
     public ResponseEntity<SuccessResponse<List<CommentResponseDto>>> getComments(@RequestParam Long postId){
 
@@ -69,6 +73,7 @@ public class CommentController {
         );
     }
 
+    @Operation(summary = "댓글 삭제", description = "게시글에 대해 작성한 댓글 삭제")
     @DeleteMapping
     public ResponseEntity<SuccessResponse<String>> deleteComment(@RequestParam Long commentId) {
 

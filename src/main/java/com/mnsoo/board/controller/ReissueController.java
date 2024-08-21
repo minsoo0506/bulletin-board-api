@@ -8,6 +8,7 @@ import com.mnsoo.board.service.JwtService;
 import com.mnsoo.board.type.ErrorCode;
 import com.mnsoo.board.type.ResponseMessage;
 import com.mnsoo.board.type.TokenType;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -24,6 +25,7 @@ public class ReissueController {
 
     private final JwtService jwtService;
 
+    @Operation(summary = "토큰 재발급", description = "refresh 토큰을 기반으로 새로운 access 토큰, refresh 토큰 발급")
     @PostMapping("/api/users/auth/reissue")
     public ResponseEntity<SuccessResponse<String>> reissue (HttpServletRequest request, HttpServletResponse response) {
 

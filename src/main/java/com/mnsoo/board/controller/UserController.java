@@ -4,6 +4,7 @@ import com.mnsoo.board.dto.user.AuthDto;
 import com.mnsoo.board.dto.SuccessResponse;
 import com.mnsoo.board.service.UserService;
 import com.mnsoo.board.type.ResponseMessage;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -20,6 +21,7 @@ public class UserController {
 
     private final UserService userService;
 
+    @Operation(summary = "회원가입", description = "신규 회원 등록")
     @PostMapping("/auth/signup")
     public ResponseEntity<SuccessResponse<String>> signup(@RequestBody @Valid AuthDto.SignUp signupRequest) {
 
@@ -33,6 +35,7 @@ public class UserController {
         );
     }
 
+    @Operation(summary = "로그인", description = "등록된 사용자인지 확인 및 토큰 발급")
     @PostMapping("/auth/signin")
     public ResponseEntity<SuccessResponse<String>> signIn(@RequestBody AuthDto.SignIn signInRequest){
 
